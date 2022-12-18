@@ -1,0 +1,7 @@
+[access:filesystem]
+[access:network:encrypted]
+[access:network]
+[security:high:syscall]
+[security:medium:reflect]
+[security:medium:runtime]
+[warning:review:math/rand]
