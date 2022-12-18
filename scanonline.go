@@ -10,7 +10,7 @@ import (
 )
 
 // const
-const scaleConnect = 3 // number of parallel sessions per cpu core
+const scaleConnect = 1 // number of parallel sessions per cpu core
 
 // var
 var (
