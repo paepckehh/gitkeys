@@ -9,6 +9,11 @@
 - all key sets in the keyfile (and the keyfile itself) is protected by (chained) sha512 hash checksums (wip:signatures)
 - 100 % pure go, 100 % pure stdlib only, no external dependencies
 
+## Install 
+```
+go install paepcke.de/gitkeys/cmd/gitkeys@latest
+```
+
 # Do you have a store of local git (mirrors)? 
 
 ``` Shell
