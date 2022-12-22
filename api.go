@@ -4,10 +4,6 @@ package gitkeys
 // import
 import ()
 
-//
-// REPORT
-//
-
 // Repo ...
 type Repo struct {
 	KeyFile   string
