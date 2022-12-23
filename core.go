@@ -4,10 +4,8 @@ package gitkeys
 // import
 import (
 	"net/url"
-	"runtime"
 	"sort"
 	"strings"
-	"time"
 )
 
 // addOwner ...
