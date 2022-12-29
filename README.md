@@ -17,6 +17,10 @@ git ssh keys logging , stupid simple, fast, local
 go install paepcke.de/gitkeys/cmd/gitkeys@latest
 ```
 
+# DOWNLOAD (prebuild)
+
+[github.com/paepckehh/gitkeys/releases](https://github.com/paepckehh/gitkeys/releases)
+
 # SHOWTIME
 
 ## Do you have a store of local git (mirrors)? 
