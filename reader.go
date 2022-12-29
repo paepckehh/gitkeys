@@ -66,7 +66,7 @@ func (r *Repo) readKeyFile() string {
 			}
 			globalCheckSum = line[_globalCheckSumLen:]
 		case line[:_tsUnixLen] == _tsUnix:
-			if tsUnix.Compare(_tsZero) != 0 {
+			if tsUnix.Equal(_tsZero) {
 				outERR(_compromised)
 				outERR(_keyFile + _checksum + "duplicate unix timestamp")
 			}
@@ -75,7 +75,7 @@ func (r *Repo) readKeyFile() string {
 				outERR(_keyFile + _checksum + "parse timestamp unix : " + err.Error())
 			}
 		case line[:_tsZuluLen] == _tsZulu:
-			if tsZulu.Compare(_tsZero) != 0 {
+			if tsZulu.Equal(_tsZero) {
 				outERR(_compromised)
 				outERR(_keyFile + _checksum + "duplicate zulu timestamp")
 			}
@@ -94,7 +94,7 @@ func (r *Repo) readKeyFile() string {
 			keys = ""
 		}
 	}
-	if tsUnix.Compare(tsZulu) != 0 {
+	if tsUnix.Equal(tsZulu) {
 		outERR(_compromised)
 		outERR(_keyFile + _checksum + "timestamps [unix|zulu] missmatch")
 	}
