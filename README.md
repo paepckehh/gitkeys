@@ -17,7 +17,7 @@ git ssh keys logging , stupid simple, fast, local
 go install paepcke.de/gitkeys/cmd/gitkeys@latest
 ```
 
-# DOWNLOAD (prebuild)
+### DOWNLOAD (prebuild)
 
 [github.com/paepckehh/gitkeys/releases](https://github.com/paepckehh/gitkeys/releases)
 
