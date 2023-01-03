@@ -91,7 +91,6 @@ func (r *Repo) readKeyFile() string {
 			r.addEmptyOwner(ownerName)
 		} else {
 			r.addOwner(ownerName, keys)
-			keys = ""
 		}
 	}
 	if !tsUnix.Equal(tsZulu) {

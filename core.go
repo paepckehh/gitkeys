@@ -30,11 +30,6 @@ func (r *Repo) addEmptyOwner(ownerName string) {
 	r.idMap[ownerName] = newOwner
 }
 
-// getOwnerUrl ...
-func getOwnerUrl(owner string) string {
-	return _urlprefix + owner
-}
-
 // getRepoOwner ...
 func getRepoOwner(u *url.URL) string {
 	var owner string

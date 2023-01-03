@@ -52,10 +52,7 @@ func newKeySET() *keySET {
 func (r *Repo) verifyGlobalInteg(ts time.Time, integ string) bool {
 	// out("DEBUG INTEG TARGET:" + integ)
 	// out("DEBUG INTEG CALC  :" + r.globalCheckSum(ts))
-	if integ != r.globalCheckSum(ts) {
-		return false
-	}
-	return true
+	return integ == r.globalCheckSum(ts)
 }
 
 // globalCheckSum ...

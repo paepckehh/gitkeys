@@ -15,20 +15,25 @@ type owner struct {
 	checksum [sha512.Size]byte
 }
 
+// getOwnerUrl ...
+// func getOwnerUrl(owner string) string {
+// 	return _urlprefix + owner
+// }
+
 // newOwner ..
-func newOwner() *owner {
-	return &owner{
-		empty:    true,
-		keySET:   newKeySET(),
-		checksum: [sha512.Size]byte{},
-	}
-}
+// func newOwner() *owner {
+// 	return &owner{
+// 		empty:    true,
+// 		keySET:   newKeySET(),
+// 		checksum: [sha512.Size]byte{},
+// 	}
+// }
 
 // valid ...
-func (o *owner) valid(newCheckSum [sha512.Size]byte) bool {
-	o.checkSum()
-	return bytes.Equal(o.checksum[:], newCheckSum[:])
-}
+// func (o *owner) valid(newCheckSum [sha512.Size]byte) bool {
+// 	o.checkSum()
+// 	return bytes.Equal(o.checksum[:], newCheckSum[:])
+// }
 
 // checkSum ...
 func (o *owner) checkSum() {
