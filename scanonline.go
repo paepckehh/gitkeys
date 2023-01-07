@@ -5,6 +5,7 @@ package gitkeys
 import (
 	"bytes"
 	"errors"
+	"strings"
 	"sync"
 	"time"
 )
@@ -117,6 +118,9 @@ func onlineWorker() {
 
 // fetchRawKeys
 func fetchRawKeys(o string) ([]byte, error) {
+	if strings.HasPrefix(o, "git.sr.ht") {
+		o = strings.ReplaceAll(o, "git.sr.ht", "meta.sr.ht")
+	}
 	request, err := getRequest(_https + o + _keys)
 	if err != nil {
 		return _emptySlice, err
