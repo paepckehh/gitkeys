@@ -4,7 +4,6 @@ package gitkeys
 // import
 import (
 	"bytes"
-	"errors"
 	"strings"
 	"sync"
 	"time"
@@ -128,9 +127,6 @@ func fetchRawKeys(o string) ([]byte, error) {
 	response, err := client.Do(request)
 	if err != nil {
 		return _emptySlice, err
-	}
-	if response.StatusCode != 200 {
-		return _emptySlice, errors.New("fetch failed")
 	}
 	return decodeResponse(response)
 }
