@@ -1,7 +1,5 @@
-// package gitkeys ...
 package gitkeys
 
-// import
 import (
 	"encoding/base64"
 	"errors"

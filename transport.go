@@ -1,7 +1,5 @@
-// package gitkeys
 package gitkeys
 
-// import ...
 import (
 	"compress/gzip"
 	"crypto/sha256"

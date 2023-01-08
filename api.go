@@ -1,4 +1,4 @@
-// package gitkeys ...
+// package gitkeys allows you to maintain a local-first git key tranparency log
 package gitkeys
 
 // import
