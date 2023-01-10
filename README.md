@@ -64,6 +64,9 @@ GITSTORE="/usr/store/git" gitkeys
 HTTPS_PROXY="proxy.bigCorp.local" SSL_CERT_FILE="/etc/ssl/bigCorpProxy.pem" GITSTORE="/usr/store/git" gitkeys fetch
  [...]
 ```
+# DOCS
+
+[pkg.go.dev/paepcke.de/gitkeys](https://pkg.go.dev/paepcke.de/gitkeys)
 
 # CONTRIBUTION
 
