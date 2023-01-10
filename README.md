@@ -1,7 +1,7 @@
 # OVERVIEW 
 
-[paepche.de/gitkeys](https://paepcke.de/gitkeys)
-example-log-store : [paepche.de/keys](https://paepcke.de/keys)
+[paepche.de/gitkeys](https://paepcke.de/gitkeys/)
+example-log-store : [paepche.de/keys](https://paepcke.de/keys/)
 
 git ssh keys logging , stupid simple, fast, local
  
