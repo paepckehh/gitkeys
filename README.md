@@ -1,7 +1,8 @@
 # OVERVIEW 
+[![Go Report Card](https://goreportcard.com/badge/paepcke.de/gitkeys)](https://goreportcard.com/report/paepcke.de/gitkeys)
 
 [paepche.de/gitkeys](https://paepcke.de/gitkeys/)
-example-log-store : [paepche.de/keys](https://paepcke.de/keys/)
+log-store : [paepche.de/keys](https://paepcke.de/keys/)
 
 git ssh keys logging , stupid simple, fast, local
  
