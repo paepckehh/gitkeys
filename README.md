@@ -1,5 +1,5 @@
-# OVERVIEW 
-[![Go Reference](https://pkg.go.dev/badge/paepcke.de/gitkeys.svg)](https://pkg.go.dev/paepcke.de/gitkeys) [![Go Report Card](https://goreportcard.com/badge/paepcke.de/gitkeys)](https://goreportcard.com/report/paepcke.de/gitkeys)
+# OVERVIEW
+[![Go Reference](https://pkg.go.dev/badge/paepcke.de/gitkeys.svg)](https://pkg.go.dev/paepcke.de/gitkeys) [![Go Report Card](https://goreportcard.com/badge/paepcke.de/gitkeys)](https://goreportcard.com/report/paepcke.de/gitkeys) [![Go Build](https://github.com/paepckehh/gitkeys/actions/workflows/golang.yml/badge.svg)](https://github.com/paepckehh/gitkeys/actions/workflows/golang.yml)
 
 [paepche.de/gitkeys](https://paepcke.de/gitkeys/)
 log-store : [paepche.de/keys](https://paepcke.de/keys/)
