@@ -1,6 +1,6 @@
 module paepcke.de/gitkeys
 
-go 1.19
+go 1.21
 
 require (
 	golang.org/x/crypto v0.5.0 // indirect
