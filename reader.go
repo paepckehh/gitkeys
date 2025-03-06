@@ -12,7 +12,7 @@ import (
 // readFiles ...
 func (r *Repo) readFiles() error {
 	if r.GitStore == _empty || r.KeyFile == _empty {
-		return errors.New("Need RepoStore and KeyFile")
+		return errors.New("need RepoStore and KeyFile")
 	}
 	_ = r.readKeyFile()
 	r.readUrlFile()

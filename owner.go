@@ -13,6 +13,19 @@ type owner struct {
 	checksum [sha512.Size]byte
 }
 
+// checkSum ...
+func (o *owner) checkSum() {
+	var buf bytes.Buffer
+	if o.name == _empty {
+		out("[internal-error] [checkSum] owner empty")
+	}
+	buf.WriteString(o.name)
+	if !o.empty {
+		buf.WriteString(o.keySET.String())
+	}
+	o.checksum = sha512.Sum512(buf.Bytes())
+}
+
 // getOwnerUrl ...
 // func getOwnerUrl(owner string) string {
 // 	return _urlprefix + owner
@@ -32,16 +45,3 @@ type owner struct {
 // 	o.checkSum()
 // 	return bytes.Equal(o.checksum[:], newCheckSum[:])
 // }
-
-// checkSum ...
-func (o *owner) checkSum() {
-	var buf bytes.Buffer
-	if o.name == _empty {
-		out("[internal-error] [checkSum] owner empty")
-	}
-	buf.WriteString(o.name)
-	if !o.empty {
-		buf.WriteString(o.keySET.String())
-	}
-	o.checksum = sha512.Sum512(buf.Bytes())
-}
