@@ -24,7 +24,6 @@ type scanResult struct {
 
 // var
 var (
-	configFileChan              = make(chan string, 25)
 	urlCollectChan              = make(chan *scanResult, 100)
 	feeder, collect, confWorker sync.WaitGroup
 )
